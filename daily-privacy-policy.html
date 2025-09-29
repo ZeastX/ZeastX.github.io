@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Daily (Daily SAS)</title>
+  <meta name="description" content="Privacy Policy for Daily by Daily SAS — covering GDPR/UK GDPR/Swiss FADP, CCPA/CPRA and other U.S. state laws, LGPD (Brazil), PIPEDA (Canada), and Australia’s APPs." />
+  <!-- Adaptive theme-color for address bar UI -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0f15">
+  <!-- JS-updated theme color to match manual override -->
+  <meta id="theme-color-override" name="theme-color" content="#f9fafb">
+  <link rel="canonical" href="https://example.com/privacy" />
+  <meta property="og:title" content="Privacy Policy — Daily" />
+  <meta property="og:description" content="How Daily SAS handles your data, your rights, and regional notices." />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_GB" />
+  <style>
+    /* Default: light theme variables; dark comes from prefers-color-scheme */
+    :root {
+      color-scheme: light dark;
+      --bg: #f9fafb; --fg: #111827; --card: #ffffff; --border: rgba(0,0,0,.08);
+      --muted: #6b7280; --link: #1d4ed8; --summary-bg: #eef2ff; --summary-border: #c7d2fe;
+      --toc-bg: #f3f4f6; --code-bg: #f3f4f6; --table-head: #f9fafb; --shadow: 0 1px 2px rgba(0,0,0,.03);
+      --header-bg: rgba(249,250,251,.7); --header-border: rgba(0,0,0,.06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f15; --fg: #e5e7eb; --card: #0f172a; --border: #1f2937; --muted: #9ca3af;
+        --link: #93c5fd; --summary-bg: #111827; --summary-border: #374151; --toc-bg: #0b1220;
+        --code-bg: #111827; --table-head: #0f172a; --shadow: none;
+        --header-bg: rgba(11,15,21,.6); --header-border: rgba(255,255,255,.08);
+      }
+    }
+    /* Manual override via [data-theme] attribute */
+    :root[data-theme="light"] {
+      --bg: #f9fafb; --fg: #111827; --card: #ffffff; --border: rgba(0,0,0,.08);
+      --muted: #6b7280; --link: #1d4ed8; --summary-bg: #eef2ff; --summary-border: #c7d2fe;
+      --toc-bg: #f3f4f6; --code-bg: #f3f4f6; --table-head: #f9fafb; --shadow: 0 1px 2px rgba(0,0,0,.03);
+      --header-bg: rgba(249,250,251,.7); --header-border: rgba(0,0,0,.06);
+    }
+    :root[data-theme="dark"] {
+      --bg: #0b0f15; --fg: #e5e7eb; --card: #0f172a; --border: #1f2937; --muted: #9ca3af;
+      --link: #93c5fd; --summary-bg: #111827; --summary-border: #374151; --toc-bg: #0b1220;
+      --code-bg: #111827; --table-head: #0f172a; --shadow: none;
+      --header-bg: rgba(11,15,21,.6); --header-border: rgba(255,255,255,.08);
+    }
+    html { -webkit-text-size-adjust: 100%; font-feature-settings: "kern","liga","clig","calt"; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height: 1.65;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    header {
+      position: sticky; top: 0; backdrop-filter: saturate(180%) blur(8px);
+      background: var(--header-bg); border-bottom: 1px solid var(--header-border); z-index: 20;
+    }
+    .header-inner { max-width: 900px; margin: 0 auto; padding: .8rem 1rem; display:flex; align-items:center; gap: 1rem; }
+    .brand { font-weight: 800; letter-spacing: .2px; }
+    .spacer { flex: 1; }
+    .pill {
+      display:inline-flex; align-items: center; gap: .45rem;
+      padding: .35rem .7rem; border:1px solid var(--border);
+      border-radius: 999px; font-size: .85rem; text-decoration: none; color: inherit; background: var(--card);
+    }
+    .select { appearance: none; background: transparent; color: inherit; border: none; outline: none; font: inherit; cursor: pointer; padding-right: 1.1rem; }
+    .select-wrap { position: relative; }
+    .select-wrap::after { content: "▾"; position: absolute; right: .55rem; top: 50%; transform: translateY(-50%); font-size: .8rem; color: var(--muted); pointer-events: none; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 5rem; }
+    h1, h2, h3 { line-height: 1.25; margin: 2rem 0 1rem; letter-spacing: -0.02em; }
+    h1 { font-size: clamp(1.8rem, 1.4rem + 2vw, 2.6rem); }
+    h2 { font-size: clamp(1.4rem, 1.2rem + 1.2vw, 1.8rem); }
+    h3 { font-size: clamp(1.1rem, 1rem + .8vw, 1.25rem); }
+    p { margin: 1rem 0; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 1.25rem; box-shadow: var(--shadow); }
+    .meta { color: var(--muted); font-size:.95rem; }
+    .summary { background: var(--summary-bg); border-color: var(--summary-border); }
+    a { color: var(--link); }
+    .toc { background: var(--toc-bg); }
+    .toc a { text-decoration: none; }
+    .muted { color: var(--muted); }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; background: var(--code-bg); border-radius: 8px; padding: .2rem .35rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; border-radius: 12px; overflow: hidden; }
+    th, td { border: 1px solid var(--border); padding: .6rem .6rem; text-align: left; vertical-align: top; }
+    th { background: var(--table-head); font-weight: 700; }
+    ul { padding-left: 1.25rem; }
+    .footer { margin-top: 3rem; font-size: .9rem; color: var(--muted); }
+    .note { font-size:.95rem; }
+    /* Print styles */
+    @media print {
+      header { display:none; }
+      .container { max-width: none; padding: 0; }
+      .card { border: none; box-shadow: none; padding: 0; }
+      a[href]:after { content: "" !important; }
+      .toc { page-break-after: avoid; }
+      h2, h3 { page-break-after: avoid; }
+    }
+  </style>
+  <script>
+    (function () {
+      const storageKey = "theme-preference";
+      const root = document.documentElement;
+      const metaOverride = document.getElementById("theme-color-override");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+      const themeSelectId = "theme-select";
+
+      function setMetaTheme(theme) {
+        const light = "#f9fafb"; const dark = "#0b0f15";
+        metaOverride.setAttribute("content", theme === "dark" ? dark : light);
+      }
+      function applyTheme(theme) {
+        if (theme === "dark") { root.setAttribute("data-theme","dark"); setMetaTheme("dark"); }
+        else if (theme === "light") { root.setAttribute("data-theme","light"); setMetaTheme("light"); }
+        else { root.removeAttribute("data-theme"); setMetaTheme(prefersDark && prefersDark.matches ? "dark" : "light"); }
+      }
+      function getStoredPreference() { try { return localStorage.getItem(storageKey) || "system"; } catch { return "system"; } }
+      function storePreference(theme) { try { localStorage.setItem(storageKey, theme); } catch {} }
+
+      const initial = getStoredPreference(); applyTheme(initial);
+      if (prefersDark && typeof prefersDark.addEventListener === "function") {
+        prefersDark.addEventListener("change", (e) => { if (getStoredPreference() === "system") setMetaTheme(e.matches ? "dark" : "light"); });
+      }
+      window.addEventListener("DOMContentLoaded", () => {
+        const sel = document.getElementById(themeSelectId);
+        if (!sel) return;
+        sel.value = initial;
+        sel.addEventListener("change", (e) => { const v = e.target.value; storePreference(v); applyTheme(v); });
+      });
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"WebPage","name":"Privacy Policy — Daily",
+    "about":{"@type":"SoftwareApplication","name":"Daily"},
+    "publisher":{"@type":"Organization","name":"Daily SAS"},
+    "datePublished":"2025-09-04","dateModified":"2025-09-04"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">Daily</div>
+      <a class="pill" href="#privacy-policy">Privacy Policy</a>
+      <div class="spacer"></div>
+      <label class="pill select-wrap" aria-label="Theme">
+        <span aria-hidden="true">🎨</span>
+        <select id="theme-select" class="select" title="Theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <article id="privacy-policy" class="card">
+      <h1>Privacy Policy — Daily (Daily SAS)</h1>
+      <p class="meta"><strong>Effective date:</strong> 4 September 2025 &nbsp;•&nbsp; <strong>Last updated:</strong> 4 September 2025</p>
+      <p class="card summary"><strong>Plain‑English summary:</strong> We collect your <strong>email</strong> and <strong>usage analytics about podcast generations and subscriptions</strong> to run and improve Daily. We don’t sell or share your personal data for advertising. We keep generation analytics in an identifiable form for <strong>1 week</strong> and then <strong>aggregate/fully anonymize</strong> them. The rest we keep as long as needed to provide the service or until you ask us to delete it. Scope: <strong>EEA/UK/Switzerland; United States (California + other state laws); Brazil; Canada; Australia</strong>. If anything here conflicts with a local law that applies to you, that local law controls.</p>
+
+      <section class="card toc" aria-label="Table of contents">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#who-we-are">1) Who we are</a></li>
+          <li><a href="#what-we-collect">2) What we collect</a></li>
+          <li><a href="#how-we-collect">3) How we collect it</a></li>
+          <li><a href="#why-we-use">4) Why we use your data (purposes &amp; legal bases)</a></li>
+          <li><a href="#no-sale">5) No sale or sharing for advertising</a></li>
+          <li><a href="#retention">6) Data retention</a></li>
+          <li><a href="#sharing">7) How we share information</a></li>
+          <li><a href="#transfers">8) International data transfers</a></li>
+          <li><a href="#security">9) Security</a></li>
+          <li><a href="#rights">10) Your privacy rights</a></li>
+          <li><a href="#children">11) Children</a></li>
+          <li><a href="#ai">12) AI‑related processing</a></li>
+          <li><a href="#contact">13) How to contact us</a></li>
+          <li><a href="#jurisdictions">14) Jurisdiction‑specific notices</a></li>
+          <li><a href="#exercise">15) Exercising your rights</a></li>
+          <li><a href="#changes">16) Changes to this policy</a></li>
+          <li><a href="#notes">17) Additional implementation notes</a></li>
+        </ul>
+      </section>
+
+      <h2 id="who-we-are">1) Who we are</h2>
+      <p><strong>Controller:</strong> Daily SAS (“Daily”, “we”, “us”)<br/>
+         <strong>App:</strong> Daily<br/>
+         <strong>Description:</strong> The app lets users generate podcasts on recent news using AI. Users can customize topics by selecting pre‑generated news subjects.<br/>
+         <strong>Contact for privacy matters:</strong> <a href="mailto:dailyaiapp@gmail.com">dailyaiapp@gmail.com</a><br/>
+         <strong>Registered address:</strong> <em>[Insert postal address]</em></p>
+      <p>As a French company, our lead EU supervisory authority is likely <strong>CNIL (France)</strong>. You can lodge complaints with CNIL or your local regulator.</p>
+
+      <h2 id="what-we-collect">2) What we collect</h2>
+      <ul>
+        <li><strong>Email address</strong> (for account, communication, and support).</li>
+        <li><strong>Generation analytics</strong>: metadata about podcast generation events (e.g., timestamp, selected subject/topic category, generation status/success or error, processing time, counts).</li>
+        <li><strong>App usage metrics</strong> related to generations (e.g., feature usage and frequency).</li>
+        <li><strong>Subscription analytics</strong> from Apple/Google (e.g., product purchased, subscription status/renewal/cancellation, receipt identifiers). We do <strong>not</strong> receive full payment card numbers.</li>
+        <li><strong>Technical logs</strong> from our infrastructure (e.g., request IDs, error codes, coarse IP‑derived region for reliability/security).</li>
+      </ul>
+      <p>We do <strong>not</strong> intentionally collect special/sensitive categories of data. Please avoid including sensitive personal information in free‑text fields.</p>
+
+      <h2 id="how-we-collect">3) How we collect it</h2>
+      <ul>
+        <li><strong>Tracking/logging of generations</strong> and related in‑app events.</li>
+        <li><strong>Subscription status</strong> is provided by Apple App Store / Google Play billing systems.</li>
+      </ul>
+
+      <h2 id="why-we-use">4) Why we use your data (purposes &amp; legal bases)</h2>
+      <p>We use your data for analytics and to operate the Services. Legal bases vary by region.</p>
+      <table>
+        <thead>
+          <tr><th>Purpose</th><th>Examples</th><th>EU/UK/CH Legal basis</th><th>Brazil LGPD legal basis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Service operation</td><td>account setup (email), deliver/manage generations, troubleshoot</td><td>Performance of contract; Legitimate interests (service reliability)</td><td>Contract (Art. 7, V); Legitimate interest (Art. 7, IX)</td></tr>
+          <tr><td>Analytics &amp; product improvement</td><td>usage metrics, generation success rates, feature uptake</td><td>Legitimate interests; <strong>Consent</strong> where required for non‑essential tracking</td><td>Legitimate interest; <strong>Consent</strong> where required</td></tr>
+          <tr><td>Security &amp; fraud prevention</td><td>abuse detection, rate limiting, log retention for security</td><td>Legitimate interests; Legal obligation where applicable</td><td>Legitimate interest; Legal/Regulatory obligation</td></tr>
+          <tr><td>Communications</td><td>service notices, support responses</td><td>Legitimate interests; Contract</td><td>Contract; Legitimate interest</td></tr>
+        </tbody>
+      </table>
+      <p>Where laws require <strong>consent</strong> (e.g., for certain analytics/SDKs in the EEA/UK/CH), we will seek it in‑app and you can withdraw it at any time. You can also object to processing based on <strong>legitimate interests</strong>.</p>
+      <p>We <strong>do not</strong> use your personal data to train third‑party AI models and we do not conduct automated decision‑making that produces legal or similarly significant effects about you.</p>
+
+      <h2 id="no-sale">5) No sale or sharing for cross‑context behavioral advertising</h2>
+      <p>We <strong>do not sell</strong> personal information and do <strong>not share</strong> it for cross‑context behavioral advertising (as defined by California law). We do not run third‑party ad networks in the app.</p>
+
+      <h2 id="retention">6) Data retention</h2>
+      <ul>
+        <li><strong>Generation analytics</strong>: kept in identifiable form for <strong>1 week</strong>, then <strong>aggregated and irreversibly anonymized</strong> (we remove identifiers and only retain statistical summaries).</li>
+        <li><strong>Account &amp; subscription data (email, platform receipt/status metadata)</strong>: retained <strong>while your account is active</strong> and as needed for support, security, and legitimate business/legal needs (e.g., fraud prevention, tax/financial record‑keeping), then deleted or anonymized.</li>
+        <li><strong>Backups and logs</strong> may be retained for a limited time for security and integrity.</li>
+      </ul>
+
+      <h2 id="sharing">7) How we share information</h2>
+      <p>We do <strong>not</strong> sell or exchange your data for money. Sharing is limited to running the Services:</p>
+      <ul>
+        <li><strong>Processors/Service providers</strong> (under data processing agreements and our instructions):
+          <ul>
+            <li><strong>Supabase</strong> — analytics/database.</li>
+            <li><strong>OVH</strong> — VPS hosting for our infrastructure.</li>
+          </ul>
+        </li>
+        <li><strong>Independent controllers</strong>:
+          <ul>
+            <li><strong>Apple</strong> and <strong>Google</strong> — in‑app purchases and subscriptions (provide subscription status/receipts under their own policies).</li>
+          </ul>
+        </li>
+        <li><strong>Legal, safety, and security</strong>: if required by law or to protect rights, users, or the service.</li>
+      </ul>
+
+      <h2 id="transfers">8) International data transfers</h2>
+      <p>We may process data in your country and in others where our providers operate. When transferring personal data from the <strong>EEA/UK/Switzerland</strong> to countries without an adequacy decision, we rely on <strong>Standard Contractual Clauses (SCCs)</strong> (and the UK IDTA/UK Addendum as applicable) and implement supplementary measures where needed. For Brazil, we use transfer mechanisms recognized by the <strong>LGPD</strong>.</p>
+
+      <h2 id="security">9) Security</h2>
+      <p>We host analytics on <strong>Supabase</strong> and infrastructure on an <strong>OVH</strong> VPS.</p>
+      <ul>
+        <li>Encryption in transit (HTTPS/TLS) and at rest where supported.</li>
+        <li>Access controls and least‑privilege access to production systems.</li>
+        <li>Audit/error logs and monitoring; periodic permission reviews.</li>
+        <li>Secure credential handling and rotation; strong administrator authentication.</li>
+      </ul>
+      <p><em>Recommended hardening</em> (implementation guidance): enable 2‑factor authentication everywhere (Supabase, OVH, Apple/Google dev), patch and auto‑update the VPS, firewall non‑essential ports, disable password SSH login in favor of keys, enforce key rotation, and maintain tested offsite backups.</p>
+      <p>No system is perfectly secure. If we discover a breach that poses a risk to you, we will notify you and/or regulators where required by law.</p>
+
+      <h2 id="rights">10) Your privacy rights</h2>
+      <p>You can contact us at <strong><a href="mailto:dailyaiapp@gmail.com">dailyaiapp@gmail.com</a></strong> to exercise your rights. We’ll verify your request and respond within legal time limits. Common rights include access, correction, deletion, portability, restriction/withdrawal of consent, and objection to processing based on legitimate interests. Where required (certain U.S. states), you may appeal a decision—email with “Privacy Appeal”. We won’t discriminate for exercising your rights.</p>
+
+      <h2 id="children">11) Children</h2>
+      <p>The Services are <strong>not directed to children</strong>. Minimum ages: <strong>16</strong> in the EEA/UK/Switzerland (or lower if allowed by local law and with parental consent), and <strong>13</strong> in the U.S. and most other regions.</p>
+
+      <h2 id="ai">12) AI‑related processing</h2>
+      <p>Daily uses AI to generate podcasts <strong>about recent news</strong>. We aim to avoid sending personal data to model providers and log only minimal, non‑personal generation metadata for analytics. We do not use your personal data to train third‑party models. If this changes, we will update this policy and obtain consent where required.</p>
+
+      <h2 id="contact">13) How to contact us</h2>
+      <p><strong>Email:</strong> <a href="mailto:dailyaiapp@gmail.com">dailyaiapp@gmail.com</a><br/>For EEA users, you can also lodge a complaint with your local supervisory authority; as a French entity, our lead authority is likely CNIL.</p>
+
+      <h2 id="jurisdictions">14) Jurisdiction‑specific notices</h2>
+      <h3>EEA/UK/Switzerland (GDPR, UK GDPR, Swiss FADP)</h3>
+      <ul>
+        <li><strong>Controller:</strong> Daily SAS.</li>
+        <li><strong>Legal bases:</strong> contract; legitimate interests; consent where required; legal obligation.</li>
+        <li><strong>Your rights:</strong> access; rectification; erasure; restriction; portability; objection (including to analytics based on legitimate interests); withdraw consent.</li>
+        <li><strong>Complaints:</strong> you may complain to your local authority (e.g., CNIL in France, ICO in the UK, FDPIC in Switzerland).</li>
+        <li><strong>Cookies/SDKs:</strong> where analytics/SDKs are <strong>not strictly necessary</strong>, we will seek consent in‑app for EEA/UK/CH users.</li>
+        <li><strong>Automated decision‑making:</strong> none that produces legal/similarly significant effects.</li>
+        <li><strong>DPO:</strong> not appointed. If this changes, we will update this notice.</li>
+      </ul>
+
+      <h3>United States — California (CCPA/CPRA) &amp; other state laws</h3>
+      <ul>
+        <li><strong>Categories collected:</strong> identifiers (email); internet/activity information (generation/usage analytics); commercial information (subscription status/receipt IDs); inferences <strong>only in aggregated/anonymized form</strong> after 1 week. We do <strong>not</strong> collect precise geolocation, sensitive personal information, or biometric data.</li>
+        <li><strong>Purposes:</strong> operation, analytics, security.</li>
+        <li><strong>Sale/Share:</strong> we <strong>do not sell</strong> or <strong>share</strong> personal information for cross‑context behavioral advertising.</li>
+        <li><strong>Rights (California):</strong> know/access, delete, correct, portability, opt‑out of sale/share (not applicable but honored if requested), limit use/disclosure of sensitive PI (not applicable), non‑discrimination, designate an authorized agent.</li>
+        <li><strong>Other U.S. states (e.g., VA, CO, CT, UT, OR, TX):</strong> similar rights (access, delete, correct, portability, opt‑out of targeted advertising/sale/profiling) and an <strong>appeal</strong> right for denied requests.</li>
+      </ul>
+
+      <h3>Brazil (LGPD)</h3>
+      <ul>
+        <li><strong>Controller:</strong> Daily SAS.</li>
+        <li><strong>Legal bases:</strong> contract, legitimate interest, legal obligation.</li>
+        <li><strong>Data subject rights:</strong> confirmation of processing, access, correction, anonymization/blocking/deletion, portability, deletion of unnecessary/excessive data, information about sharing and consent, petition before ANPD.</li>
+        <li><strong>International transfers:</strong> safeguarded by LGPD‑recognized mechanisms.</li>
+      </ul>
+
+      <h3>Canada (PIPEDA)</h3>
+      <ul>
+        <li><strong>Purposes:</strong> operation, analytics, security.</li>
+        <li><strong>Consent:</strong> by using the Service you consent to these purposes; you may withdraw consent subject to legal/contractual limits.</li>
+        <li><strong>Access &amp; correction:</strong> rights to access and request corrections.</li>
+        <li><strong>Cross‑border processing:</strong> data may be processed outside your province or Canada; protections and contracts apply.</li>
+      </ul>
+
+      <h3>Australia (Privacy Act 1988 and APPs)</h3>
+      <ul>
+        <li>We comply with the APPs (including access/correction rights) and <strong>Notifiable Data Breaches</strong> obligations.</li>
+        <li>Cross‑border disclosures follow APP 8 with contractual safeguards.</li>
+      </ul>
+
+      <h2 id="exercise">15) Exercising your rights</h2>
+      <p>Email <strong><a href="mailto:dailyaiapp@gmail.com">dailyaiapp@gmail.com</a></strong> with the right you want to exercise, your jurisdiction, and information to verify your identity (e.g., confirm your email). Authorized agents (where applicable) should include proof of authority.</p>
+
+      <h2 id="changes">16) Changes to this policy</h2>
+      <p>We may update this policy from time to time. If changes are material, we will notify you in the app or by email. The “Last updated” date at the top shows the current version.</p>
+
+      <h2 id="notes">17) Additional implementation notes (non‑contractual guidance)</h2>
+      <ul class="note">
+        <li><strong>Consent in EEA/UK/CH:</strong> use an in‑app prompt/toggle before enabling non‑essential analytics/SDKs; honor withdrawal.</li>
+        <li><strong>Anonymization after 1 week:</strong> drop direct/indirect identifiers (e.g., account IDs, IPs) and retain only aggregated stats.</li>
+        <li><strong>Processor contracts:</strong> execute DPAs with <strong>Supabase</strong> and <strong>OVH</strong> (GDPR Art. 28).</li>
+        <li><strong>Records:</strong> maintain a GDPR Art. 30 record of processing activities.</li>
+        <li><strong>Security hygiene:</strong> enable 2FA, rotate keys, patch the VPS, firewall ports, use SSH keys, periodic access reviews, backups.</li>
+        <li><strong>Breach response:</strong> keep a lightweight incident playbook (assessment, containment, notice timelines).</li>
+        <li><strong>Age gating:</strong> add an age attestation during onboarding.</li>
+        <li><strong>Rights UI:</strong> an in‑app “Privacy Rights” screen with request/appeal flows (US states).</li>
+        <li><strong>Contact address:</strong> add your registered postal address.</li>
+      </ul>
+
+      <p class="footer">© 2025 Daily SAS. All rights reserved.</p>
+    </article>
+  </main>
+</body>
+</html>
